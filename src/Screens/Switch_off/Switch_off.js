@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import '../../App.css';
 
 class Switch_off extends Component {
@@ -16,14 +16,10 @@ class Switch_off extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <button className="btn btn-primary" onClick={()=>{
-          this.switchOn()
-        }}>Switch On</button>
+      <div>
+        <button className="btn btn-secondary" onClick={()=>{
+          this.props.jabBandKare()
+        }}>Switch Off</button>
       </div>
     );
   }

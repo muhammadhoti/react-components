@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import '../../App.css';
 
 class Broken extends Component {
@@ -14,13 +14,10 @@ class Broken extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <h1>Broken</h1>
-        
+      <div>
+        <button className="btn btn-danger" onClick={()=>{
+          this.props.jabTorde()
+        }}>Break</button>
       </div>
     );
   }
