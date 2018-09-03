@@ -4,10 +4,12 @@ import '../../App.css';
 
 class Switch_off extends Component {
 
-  constructor(){
+  constructor(props){
     
-    super();
+    super(props);
     this.state={
+      switchOff : true,
+      switchOn : false
     }
     
   }
@@ -19,7 +21,9 @@ class Switch_off extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        
+        <button className="btn btn-primary" onClick={()=>{
+          this.switchOn()
+        }}>Switch On</button>
       </div>
     );
   }
